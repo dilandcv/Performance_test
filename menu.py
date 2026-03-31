@@ -1,7 +1,6 @@
 from funtions import * #We import the functions
 bd=[]
 loop = True
-validator = True
 print("============================")
 print("==========WELCOME===========")
 print("============================")
@@ -42,7 +41,7 @@ Choose an option:
             if student:
                 print(student)
             else:
-                print("Product not found")
+                print("Student not found")
 #We request the student's new information and update the list with their information.
         elif option == 4:
             name = input("insert the student name: ")
