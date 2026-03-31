@@ -24,6 +24,9 @@ Choose an option:
             id = int(input("Insert the document number: "))
             name = input("Insert the student name : ")
             age = int(input("Insert the age: "))
+            if age <= 0:
+                print ("invalid age.try again")
+                continue
             course = input("Insert the course/program: ")
             state = input("Is the student active or inactive?: ")
             print("\nStudent successfully added!")
@@ -61,6 +64,7 @@ Choose an option:
 #The name of the student to be removed is requested and then deleted from the list.            
         elif option == 5:
             name = input("Insert the student name: ")
+            
             remove_student(bd,name)
             print("Student removed successfully")
 #option to exit the program          
